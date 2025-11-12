@@ -57,18 +57,7 @@ HELP_TEXT = """📚 **Available Commands:**
 /start - Start the bot
 /help - Show this help message
 
-**For Owner Only:**
-/stats - Get bot statistics
-/broadcast - Broadcast message to all users
-/addsudo <user_id> - Add sudo user
-/rmsudo <user_id> - Remove sudo user
-/listsudo - List all sudo users
-
-**For Sudo Users:**
-/stats - Get bot statistics
-/broadcast - Broadcast message to all users
-
-⚡ **Auto Features:**
+⚡ **Features:**
 • Automatically accepts all join requests
 • Mutes new members for verification
 • Sends verification message in the group
@@ -780,3 +769,4 @@ async def main():
 
 if __name__ == "__main__":
     Bot.run(main())
+
