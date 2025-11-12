@@ -12,10 +12,10 @@ import logging
 from contextlib import contextmanager
 
 # ==================== ⚙️ CONFIGURATION - EDIT HERE ====================
-API_ID = 20174131  # Get from my.telegram.org
-API_HASH = "eb206d2803e5812fed51245004097d39"  # Get from my.telegram.org
-BOT_TOKEN = "8448735996:AAG2d-0HjRjm8Ie5nGpA6C1o1MqKcq8Ty6A"  # Get from @BotFather
-OWNER_ID = 7548822418  # Your Telegram User ID
+API_ID =   # Get from my.telegram.org
+API_HASH = "_"  # Get from my.telegram.org
+BOT_TOKEN = "_"  # Get from @BotFather
+OWNER_ID =   # Your Telegram User ID
 
 # Bot Messages
 GROUP_WELCOME_TEXT = """🎉 Welcome, {user}!
@@ -780,3 +780,4 @@ async def main():
 
 if __name__ == "__main__":
     Bot.run(main())
+
