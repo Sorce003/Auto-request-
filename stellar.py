@@ -12,9 +12,9 @@ import logging
 from contextlib import contextmanager
 
 # ==================== ⚙️ CONFIGURATION - EDIT HERE ====================
-API_ID = 1  # Get from my.telegram.org
-API_HASH = "eb9"  # Get from my.telegram.org
-BOT_TOKEN = "6A"  # Get from @BotFather
+API_ID = 20174131  # Get from my.telegram.org
+API_HASH = "eb206d2803e5812fed51245004097d39"  # Get from my.telegram.org
+BOT_TOKEN = "8448735996:AAG2d-0HjRjm8Ie5nGpA6C1o1MqKcq8Ty6A"  # Get from @BotFather
 OWNER_ID = 7548822418  # Your Telegram User ID
 
 # Bot Messages
@@ -45,9 +45,7 @@ I'm an **Auto Request Accept Bot** that works for all channels.
 
 🔹 Add me to your channel with admin rights
 🔹 I'll automatically accept all join requests
-🔹 Auto-mute users for verification
-🔹 Users click button in group to unmute
-🔹 Powered by Pyrogram
+🔹 Powered by THE AUTOMATORS SYNDICATE
 
 💡 Use /help for more information."""
 
@@ -57,18 +55,8 @@ HELP_TEXT = """📚 **Available Commands:**
 /start - Start the bot
 /help - Show this help message
 
-**For Owner Only:**
-/stats - Get bot statistics
-/broadcast - Broadcast message to all users
-/addsudo <user_id> - Add sudo user
-/rmsudo <user_id> - Remove sudo user
-/listsudo - List all sudo users
 
-**For Sudo Users:**
-/stats - Get bot statistics
-/broadcast - Broadcast message to all users
-
-⚡ **Auto Features:**
+⚡ **Features:**
 • Automatically accepts all join requests
 • Mutes new members for verification
 • Sends verification message in the group
@@ -795,5 +783,6 @@ threading.Thread(target=run_web_dummy, daemon=True).start()
 
 if __name__ == "__main__":
     Bot.run(main())
+
 
 
