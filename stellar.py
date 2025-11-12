@@ -778,5 +778,21 @@ async def main():
     # Stop the bot gracefully
     await Bot.stop()
 
+import os
+import threading
+from http.server import SimpleHTTPRequestHandler, HTTPServer
+
+def run_web_dummy():
+    port = int(os.environ.get("PORT", 8080))
+    server = HTTPServer(("0.0.0.0", port), SimpleHTTPRequestHandler)
+    print(f"✅ Dummy server running on port {port}")
+    server.serve_forever()
+
+# Start a dummy web server so Render doesn't time out
+threading.Thread(target=run_web_dummy, daemon=True).start()
+
+
+
 if __name__ == "__main__":
     Bot.run(main())
+
